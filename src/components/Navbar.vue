@@ -110,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="navbar-line"/>
+    <!-- <div class="navbar-line"/> -->
     <div class="alert" v-if="alert">
         <div class="alert-input">
             <div class="search-icon">
@@ -145,10 +145,15 @@
 </script>
 <style scoped>
     .navbar {
+        position: sticky;
+        top: 0;
+        background: #1a1a1a;
         display: flex;
-        margin: 1rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        padding: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border-bottom: 1px solid #525252;
+        width: 100vw;
     }
     .menu-logo {
         display: flex;
